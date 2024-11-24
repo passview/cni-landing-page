@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>패스뷰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="custom" content="NTc2Mjk=" id="snextras" />
+    <link rel="icon" href="images/favicon.png" />
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Google Fonts -->
+    <link href="css/css2.css" rel="stylesheet" id="sf-google-fonts" />
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+    <link href="css/styles.min.css" rel="stylesheet" id="sf-custom-css" />
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- Styles for controls (delete, move, edit, block name) -->
+    <link href="css/preview.css" rel="stylesheet" />
+    <!-- Open graph settings (social networks sharing settings) -->
+    <meta property="og:title" content="패스뷰" />
+    <meta
+      property="og:description"
+      content="떨리는 면접, 패스뷰가 함께합니다"
+    />
+    <meta property="og:image" content="images/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Open graph settings end -->
+    <script>
+      (function () {
+        var w = window;
+        if (w.ChannelIO) {
+          return w.console.error("ChannelIO script included twice.");
+        }
+        var ch = function () {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function (args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+          var x = document.getElementsByTagName("script")[0];
+          if (x.parentNode) {
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        if (document.readyState === "complete") {
+          l();
+        } else {
+          w.addEventListener("DOMContentLoaded", l);
+          w.addEventListener("load", l);
+        }
+      })();
+
+      ChannelIO("boot", {
+        pluginKey: "feb6bfd8-eaf3-432a-b031-81de06949fbc",
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation 1 -->
+    <nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+      <div class="d-block d-lg-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+              <a
+                class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#custom-id-ofc11kz8"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-light-1"
+                >
+                  <path
+                    d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div
+              class="col-6 text-center"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              <a style="cursor: pointer"
+                ><img
+                  src="images/passview.png"
+                  srcset="images/passview%402x.png 2x"
+                  alt=""
+                  class="img-fluid"
+                  data-aos="fade-down"
+                  data-aos-delay="0"
+              /></a>
+            </div>
+            <div class="col-3" data-aos="fade-down" data-aos-delay="500"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-start bg-bg-3"
+        id="custom-id-ofc11kz8"
+        aria-hidden="true"
+      >
+        <div class="offcanvas-header">
+          <a style="cursor: pointer">
+            <img
+              src="images/passview.png"
+              srcset="images/passview%402x.png 2x"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+          <a
+            style="cursor: pointer"
+            class="btn btn-sm btn-width-equal-height btn-bg-3"
+            data-bs-dismiss="offcanvas"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-dark-2"
+            >
+              <path
+                d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"
+              ></path></svg
+          ></a>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <a
+              style="cursor: pointer"
+              class="fw-bold text-dark-1 py-2 d-inline-block"
+              >패스뷰 소개</a
+            >
+          </div>
+          <div>
+            <a
+              style="cursor: pointer"
+              onClick="ChannelIO('showMessenger');"
+              class="fw-bold text-dark-1 py-2 d-inline-block"
+              >문의</a
+            >
+          </div>
+          <div>
+            <a
+              style="cursor: pointer"
+              class="fw-bold text-dark-1 py-2 d-inline-block"
+              >소식</a
+            >
+          </div>
+          <div>
+            <a href="#pricing" class="fw-bold text-dark-1 py-2 d-inline-block"
+              >가격</a
+            >
+          </div>
+          <!-- <div>
+            <a href="/signin.html" class="fw-bold py-2 d-inline-block"
+              >로그인</a
+            >
+          </div>
+          <a href="/signin.html" class="btn btn-sm btn-action-1 rounded-2 mt-4"
+            >회원가입</a
+          > -->
+        </div>
+      </div>
+      <div class="d-none d-lg-block">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-2">
+              <a style="cursor: pointer"
+                ><img
+                  src="images/passview-logo.png"
+                  srcset="images/passview-logo.png 2x"
+                  alt=""
+                  class="img-fluid"
+                  data-aos="fade-down"
+                  data-aos-delay="0"
+              /></a>
+            </div>
+            <div class="text-center d-flex justify-content-center col-6">
+              <a
+                style="cursor: pointer"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="250"
+              >
+                패스뷰 소개
+              </a>
+              <a
+                style="cursor: pointer"
+                onClick="ChannelIO('showMessenger');"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="150"
+                >문의</a
+              >
+              <a
+                style="cursor: pointer"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="250"
+              >
+                소식
+              </a>
+              <a
+                href="#pricing"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="500"
+                >가격</a
+              >
+            </div>
+            <!-- <div class="d-flex align-items-center justify-content-end col-lg-3">
+              <a
+                href="/signin.html"
+                class="fw-bold fs-4 me-8"
+                data-aos="fade-down"
+                data-aos-delay="650"
+                >로그인</a
+              >
+              <a
+                href="/signin.html"
+                class="btn btn-sm btn-action-1 rounded-2"
+                data-aos="fade-down"
+                data-aos-delay="750"
+                >회원가입</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header 1 -->
+    <header class="py-20 bg-bg-3">
+      <div class="container">
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-md-6">
+            <img
+              src="images/interview-prep-main-blue-square.png"
+              srcset="images/interview-prep-main-blue-square%402x.png 2x"
+              alt=""
+              class="w-100"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+          <div class="col-md-6 mt-8 mt-md-0">
+            <h1
+              class="display-3 mb-6"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              면접 준비, <br />이젠 스마트하게
+            </h1>
+            <p class="mb-8 fs-1" data-aos="fade-down" data-aos-delay="250">
+              검증된 빅데이터와 첨단 AI 가 만났어요<br />떨리는 면접, 패스뷰가
+              함께합니다
+            </p>
+            <a
+              style="cursor: pointer"
+              class="btn btn-action-1"
+              data-aos="fade-down"
+              data-aos-delay="400"
+              href="https://demo.passview.co.kr"
+              target="_blank"
+              >지금 패스뷰 시작해보기</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Feature 11 -->
+    <section class="py-10 py-lg-20 text-center bg-bg-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="mb-15 col-md-10 col-lg-7 col-xl-6 col-xxl-5">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-4 fill-action-1"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.9545 30L0.989454 35.8463C0.689932 36.0063 0.439497 36.2447 0.264886 36.5359C0.0902758 36.8272 -0.00195312 37.1604 -0.00195312 37.5C-0.00195313 37.8396 0.0902758 38.1728 0.264886 38.4641C0.439497 38.7553 0.689932 38.9937 0.989454 39.1537L29.1145 54.1537C29.3857 54.2982 29.6884 54.3738 29.9957 54.3738C30.303 54.3738 30.6057 54.2982 30.877 54.1537L59.002 39.1537C59.3015 38.9937 59.5519 38.7553 59.7265 38.4641C59.9011 38.1728 59.9934 37.8396 59.9934 37.5C59.9934 37.1604 59.9011 36.8272 59.7265 36.5359C59.5519 36.2447 59.3015 36.0063 59.002 35.8463L48.0482 30L44.062 32.1263L54.142 37.5L29.9995 50.3737L5.85695 37.5L15.937 32.1263L11.9507 30H11.9545Z"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M29.1184 5.845C29.3896 5.70055 29.6923 5.625 29.9996 5.625C30.307 5.625 30.6096 5.70055 30.8809 5.845L59.0059 20.845C59.3054 21.005 59.5558 21.2434 59.7304 21.5347C59.905 21.8259 59.9973 22.1592 59.9973 22.4988C59.9973 22.8383 59.905 23.1716 59.7304 23.4628C59.5558 23.7541 59.3054 23.9925 59.0059 24.1525L30.8809 39.1525C30.6096 39.297 30.307 39.3725 29.9996 39.3725C29.6923 39.3725 29.3896 39.297 29.1184 39.1525L0.99336 24.1525C0.693839 23.9925 0.443403 23.7541 0.268792 23.4628C0.094182 23.1716 0.00195312 22.8383 0.00195312 22.4988C0.00195312 22.1592 0.094182 21.8259 0.268792 21.5347C0.443403 21.2434 0.693839 21.005 0.99336 20.845L29.1184 5.845ZM5.86086 22.4988L29.9996 35.3725L54.1421 22.4988L29.9996 9.625L5.85711 22.4988H5.86086Z"
+              ></path>
+            </svg>
+            <h2
+              class="display-5 mb-6"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              빅데이터 기반의 분석
+            </h2>
+            <p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="500">
+              감에 의존하는 건 이제 그만!<br />검증된 데이터의 도움을 받아요 :)
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center justify-content-xl-around">
+          <div
+            class="mb-15 mb-md-0 col-10 col-sm-8 col-md-4 col-xl-3"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            <h5 class="display-5 text-action-1 mb-6">10 만건+</h5>
+            <h5 class="mb-4">대한민국 최대 빅데이터</h5>
+            <p class="mb-0">
+              기출 뿐 아니라 모범 답변 데이터를 포함해 역대 최고 수량의
+              빅데이터를 구축했어요
+            </p>
+          </div>
+          <div
+            class="mb-15 mb-md-0 col-10 col-sm-8 col-md-4 col-xl-3"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            <h5 class="display-5 text-action-1 mb-6">10년 +</h5>
+            <h5 class="mb-4">꾸준히 누적된 노하우</h5>
+            <p class="mb-0">
+              10년 이상 대입 / 취업 / 공무원 / 공기관 / 자격증 등 각 분야의
+              전문가들이 현장에서 모아온 데이터와 노하우를 통합했어요
+            </p>
+          </div>
+          <div
+            class="col-10 col-sm-8 col-md-4 col-xl-3"
+            data-aos="fade-down"
+            data-aos-delay="500"
+            draggable="true"
+          >
+            <h5 class="display-5 text-action-1 mb-6">1,000 기관 +</h5>
+            <h5 class="mb-4">분석 대상 기관</h5>
+            <p class="mb-0">
+              대학 100+ / 공기업 및 공공기관 300+ / 사기업 600+ 곳을 분석했어요
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 7 -->
+    <section class="py-10 py-lg-20 text-center bg-bg-3">
+      <div class="container">
+        <div class="row align-items-center flex-column">
+          <div class="col-sm-11 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+            <h2 class="display-5" data-aos="fade-down" data-aos-delay="0">
+              지금은 AI 시대
+            </h2>
+          </div>
+          <div class="col-12">
+            <img
+              src="images/frame-10.png"
+              srcset="images/frame-10.png 2x"
+              alt=""
+              class="img-fluid my-md-15 my-8"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            />
+          </div>
+          <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+            <p class="fs-3 mb-0" data-aos="fade-down" data-aos-delay="500">
+              OpenAI 현존 최고의 모델인 gpt-4o 을 메인 파운데이션 모델로
+              사용하여 화상과 육성을 함께 사용해 실시간 소통할 수 있어요.
+              빅데이터로 RAG 를 구성하여 최고의 '똑똑함'을 자랑합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 10 -->
+    <section class="py-10 py-lg-20 text-center bg-bg-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-md-15 mb-8">
+            <h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+              올인원 솔루션
+            </h2>
+            <p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="250">
+              똑똑한 AI 는 인간과 세상에 대한 범용적인 이해와 사용되는 영역의
+              특수한 이해를 동시에 가지고 있어야만 해요. 패스뷰 AI 는 첨단 LLM
+              을 통해 폭넓게 이해하는 올인원 파운데이션 능력을 갖추고, 전문
+              빅데이터를 통해 분야별 면접의 특수성까지 마스터했어요
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="mb-15 mb-md-0 col-sm-8 col-md-4 col-xxl-3"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            <img
+              src="images/high-school-student.png"
+              srcset="images/high-school-student%402x.png 2x"
+              alt=""
+              class="img-fluid mb-6"
+            />
+            <h5 class="mb-4">대학 입시</h5>
+            <p class="mb-0">
+              일반 면접 / 서류기반 면접 / 제시문 기반 면접 / 의대 mmi 면접 /
+              교육대 사범대 인적성 면접 등
+            </p>
+          </div>
+          <div
+            class="mb-15 mb-md-0 col-sm-8 col-md-4 col-xxl-3"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            <img
+              src="images/office-worker.png"
+              srcset="images/office-worker%402x.png 2x"
+              alt=""
+              class="img-fluid mb-6"
+            />
+            <h5 class="mb-4">취업 준비</h5>
+            <p class="mb-0">
+              대기업 / 중소기업 / 인성면접 / 직무역량면접 / 영어 면접 / 자소서 /
+              이력서 등
+            </p>
+          </div>
+          <div
+            class="col-sm-8 col-md-4 col-xxl-3"
+            data-aos="fade-down"
+            data-aos-delay="500"
+          >
+            <img
+              src="images/public-official.png"
+              srcset="images/public-official%402x.png 2x"
+              alt=""
+              class="img-fluid mb-6"
+            />
+            <h5 class="mb-4">공무원 임용</h5>
+            <p class="mb-0">
+              국가직 / 지방직 / 교행직 / 경찰 / 소방/ 군무원 / 공무직 등
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-xxl-12 mt-12">
+          <div
+            class="mb-15 mb-md-0 col-sm-8 col-md-4 col-xxl-3"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            <img
+              src="images/building.png"
+              srcset="images/building%402x.png 2x"
+              alt=""
+              class="img-fluid mb-6"
+            />
+            <h5 class="mb-4">공기업</h5>
+            <p class="mb-0">300 여개 공기업 및 공공기관 철저 대비</p>
+          </div>
+          <div
+            class="mb-15 mb-md-0 col-sm-8 col-md-4 col-xxl-3"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            <img
+              src="images/prize.png"
+              srcset="images/prize%402x.png 2x"
+              alt=""
+              class="img-fluid mb-6"
+            />
+            <h5 class="mb-4">자격증</h5>
+            <p class="mb-0">간호사 / 로스쿨 / 귀화면접 등</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 15 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+      <div class="container">
+        <div
+          class="row flex-column-reverse flex-lg-row justify-content-lg-between align-items-center align-items-lg-start"
+        >
+          <div class="col-sm-10 col-md-7 col-lg-5 col-xxl-4">
+            <h2
+              class="display-6 mb-12"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              대입 수시 면접
+            </h2>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="400">
+              <h4 class="mb-4">제시문 기반 면접</h4>
+              <p class="fs-3 mb-0">
+                SKY 를 포함, 주요 명문대들의 기출 문항을 확보해 분석하여 미래에
+                있을 변동까지 예측해 예상 문제를 제시해요
+              </p>
+            </div>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="500">
+              <h4 class="mb-4">서류 기반 면접</h4>
+              <p class="fs-3 mb-0">
+                등록 회원의 생활 기록부 내용을 검토해 인성, 가치관, 교내활동,
+                수상, 학업과정, 교우관계 등 폭넓게 예상 문제를 제시해요
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="650">
+              <h4 class="mb-4">교사대/ 의대 면접</h4>
+              <p class="fs-3 mb-0">
+                교육대, 사범대 등 특화 대학 및 학과 / 주요 의대 MMI 면접을
+                데이터에 근거하여 철저히 분석하고 대비해요
+              </p>
+            </div>
+          </div>
+          <div class="mb-8 mb-lg-0 col-sm-8 col-md-6">
+            <img
+              src="images/high-school-student-square.png"
+              srcset="images/high-school-student-square%402x.png 2x"
+              alt=""
+              class="img-fluid w-100"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 16 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-start">
+          <div class="mb-8 mb-lg-0 col-sm-8 col-md-6">
+            <img
+              src="images/office-worker-square.png"
+              srcset="images/office-worker-square%402x.png 2x"
+              alt=""
+              class="img-fluid w-100"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+          <div class="col-lg-1 col-xxl-1"></div>
+          <div class="col-sm-10 col-md-7 col-lg-5 col-xxl-4">
+            <h2
+              class="display-6 mb-12"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              취업 면접
+            </h2>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="400">
+              <h4 class="mb-4">직무 면접</h4>
+              <p class="fs-3 mb-0">
+                보유 빅데이터를 기반으로 지원 분야와 직무에 최적화 된 질문
+                문항을 선별하고 나에게 맞게 생성해요
+              </p>
+            </div>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="500">
+              <h4 class="mb-4">영어 면접</h4>
+              <p class="fs-3 mb-0">
+                외국계 기업의 실 취업자를 대상으로 기출 문제를 분석했어요.
+                겹치지 않으면서 최적화된 질문을 제시해드려요
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="650">
+              <h4 class="mb-4">서류기반 면접</h4>
+              <p class="fs-3 mb-0">
+                인성, 가치관, 직무 능력, 특징, 커리어 등 이력서 내용을 분석하여,
+                검토한 결과를 기반으로 등장 확률이 높은 예상 질문을 개인화해요
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 15 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+      <div class="container">
+        <div
+          class="row flex-column-reverse flex-lg-row justify-content-lg-between align-items-center align-items-lg-start"
+        >
+          <div class="col-sm-10 col-md-7 col-lg-5 col-xxl-4">
+            <h2
+              class="display-6 mb-12"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              공무원 면접
+            </h2>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="400">
+              <h4 class="mb-4">9급 지방직</h4>
+              <p class="fs-3 mb-0">
+                공직관, 개인 신상, 경험형 / 상황형/ 정책형 등 지역별 기출 문제를
+                분석해요
+              </p>
+            </div>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="500">
+              <h4 class="mb-4">사회복지직</h4>
+              <p class="fs-3 mb-0">
+                다년간의 사회복지직 공무원 기출 문제를 분석하여 선별해요
+              </p>
+            </div>
+            <div class="mb-12" data-aos="fade-down" data-aos-delay="500">
+              <h4 class="mb-4">교육행정직</h4>
+              <p class="fs-3 mb-0">
+                공직관, 청렴, 갈등과 경험형, 변화관리, 전문지식 등 즉답형 빈출
+                문제가 중요해요
+              </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="650">
+              <h4 class="mb-4">국가직</h4>
+              <p class="fs-3 mb-0">
+                국가직 9급, 경찰관, 소방관, 군무원, 공무직 등 유형별 기출 문제를
+                나에게 맞게 분석하는 작업이 진행되요
+              </p>
+            </div>
+          </div>
+          <div class="mb-8 mb-lg-0 col-sm-8 col-md-6">
+            <img
+              src="images/public-official-square.png"
+              srcset="images/public-official-square%402x.png 2x"
+              alt=""
+              class="img-fluid w-100"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 9 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-center justify-content-lg-between"
+        >
+          <div class="col-sm-8 col-md-6 col-lg-6">
+            <img
+              src="images/building-square.png"
+              srcset="images/building-square%402x.png 2x"
+              alt=""
+              class="img-fluid w-100 mb-6 mb-lg-0"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+          <div class="col-sm-10 col-md-8 col-lg-5 col-xxl-4">
+            <h2
+              class="display-5 mb-6"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              공기업 면접
+            </h2>
+            <p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="500">
+              300 여개 공기업 및 공공기간에 최적화 된 질문을 드릴 수 있어요
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature 8 -->
+    <section class="py-10 py-lg-20 bg-bg-3">
+      <div class="container">
+        <div class="row align-items-md-center justify-content-between">
+          <div class="mb-8 mb-md-0 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+            <h2
+              class="display-5 mb-6 text-center text-md-start"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              자격증 면접
+            </h2>
+            <p
+              class="fs-2 text-center text-md-start mb-0"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              간호사, 로스쿨, 귀화 면접 등 특정 영역을 맞춤형 핀포인트하여
+              문항을 선별해 드려요
+            </p>
+          </div>
+          <div class="col-md-5 col-xl-6">
+            <img
+              src="images/prize-square.png"
+              srcset="images/prize-square%402x.png 2x"
+              alt=""
+              class="img-fluid w-100"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing 10 -->
+    <section class="py-10 py-lg-20 bg-bg-3">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-10 col-xl-8">
+            <h2
+              id="pricing"
+              class="display-5 mb-6"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            >
+              가격 정책
+            </h2>
+          </div>
+          <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-10">
+            <p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="150">
+              합리적인 비용으로 효율적인 면접준비를 해보세요! <br />패스뷰가
+              도와드릴게요 :)
+            </p>
+          </div>
+        </div>
+        <label
+          class="form-check form-switch text-center mb-12"
+          data-aos="fade-down"
+          data-aos-delay="250"
+        >
+          <span class="form-check-label font-heading fs-4 text-dark-1 me-4"
+            >월간</span
+          ><input
+            class="form-check-input form-control-lg"
+            type="checkbox"
+            name="switch"
+            data-bs-target="#custom-id-fvgsbju0"
+          />
+          <span class="form-switch-wrapper">
+            <div class="form-switch-pin"></div>
+          </span>
+          <span class="form-check-label ms-2 font-heading fs-4 text-dark-1"
+            >연간</span
+          >
+        </label>
+        <div
+          id="custom-id-fvgsbju0"
+          class="carousel slide carousel-fade"
+          data-bs-interval="false"
+          data-bs-touch="false"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active bg-bg-3">
+              <div class="row justify-content-center">
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-bg-2 bg-bg-2"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">데모</h2>
+                      <p class="mb-6">
+                        결제 전 먼저 체험해보세요.
+                        <!-- <br /> 1시간의 사용량이 주어져요! -->
+                        <ul>
+                          <li> <strong>[대학입시/일반면접]</strong> 으로 한정됩니다. </li>
+                          <li>파일 <small>(생활기록부 등)</small> 업로드 등 부가기능이 불가합니다.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <a
+                      style="cursor: pointer"
+                      class="btn w-100 btn-bg-1"
+                      href="https://demo.passview.co.kr"
+                      target="_blank"
+                      >지금 바로 시작해보기</a
+                    >
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-dark-3"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">개인</h2>
+                      <p class="mb-6">
+                        지원하는 분야와 기관, 그리고 나에 관한 데이터를 업로드
+                        해 보세요. 오직 내게 최적화 된 맞춤 면접을 준비하실 수
+                        있어요!
+                      </p>
+                    </div>
+                    <!-- <a style="cursor: pointer" class="btn w-100 btn-action-1"
+                      >월 10만원</a
+                    > -->
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-dark-3"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">조직</h2>
+                      <p class="mb-6">
+                        조직이 관리하는 여러 사용자를 대상으로 서비스를 제공하실
+                        수 있어요.
+                      </p>
+                    </div>
+                    <a style="cursor: pointer" class="btn w-100 btn-action-2" onClick="ChannelIO('showMessenger');"                    >
+                      <!-- 월 15만원부터 -->
+                      문의하기
+                    </a>
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item bg-bg-3">
+              <div class="row justify-content-center">
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-bg-2 bg-bg-2"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">데모</h2>
+                      <p class="mb-6">
+                        결제 전 먼저 체험해보세요.
+                        <!-- <br />1시간의 사용량이 주어져요! -->
+                        <ul>
+                          <li> <strong>[대학입시/일반면접]</strong> 으로 한정됩니다. </li>
+                          <li>파일 <small>(생활기록부)</small> 업로드 등 부가기능이 불가합니다.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <a
+                      style="cursor: pointer"
+                      class="btn w-100 btn-bg-1"
+                      href="https://demo.passview.co.kr"
+                      target="_blank"
+                      >지금 바로 시작해보기</a
+                    >
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-dark-3"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">개인</h2>
+                      <p class="mb-6">
+                        지원하는 분야와 기관, 그리고 나에 관한 데이터를 업로드
+                        해 보세요. 오직 내게 최적화 된 맞춤 면접을 준비하실 수
+                        있어요!
+                      </p>
+                    </div>
+                    <!-- <a style="cursor: pointer" class="btn w-100 btn-action-1"
+                      >연 100만원</a
+                    > -->
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-1 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-dark-3 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M13.6569 13.6561C12.1566 15.1564 10.1217 15.9993 8 15.9993C5.87827 15.9993 3.84344 15.1564 2.34315 13.6561C0.842855 12.1558 -6.33464e-08 10.121 -6.33464e-08 7.99926C-1.4764e-07 5.87752 0.842855 3.84269 2.34315 2.3424C3.84344 0.84211 5.87827 -0.00074463 8 -0.000744546C10.1217 -0.00074463 12.1566 0.84211 13.6569 2.3424C15.1571 3.84269 16 5.87752 16 7.99926C16 10.121 15.1571 12.1558 13.6569 13.6561ZM10.8284 5.87793C10.9222 5.78417 10.9749 5.65699 10.9749 5.52438C10.9749 5.39177 10.9222 5.2646 10.8284 5.17083C10.7347 5.07706 10.6075 5.02438 10.4749 5.02438C10.3423 5.02438 10.2151 5.07706 10.1213 5.17083L8 7.29215L5.87868 5.17083C5.78491 5.07706 5.65773 5.02438 5.52513 5.02438C5.39252 5.02438 5.26534 5.07706 5.17157 5.17083C5.0778 5.2646 5.02513 5.39177 5.02513 5.52438C5.02513 5.65699 5.0778 5.78417 5.17157 5.87793L7.29289 7.99926L5.17157 10.1206C5.0778 10.2143 5.02513 10.3415 5.02513 10.4741C5.02513 10.6067 5.0778 10.7339 5.17157 10.8277C5.26534 10.9215 5.39252 10.9741 5.52513 10.9741C5.65773 10.9741 5.78491 10.9215 5.87868 10.8277L8 8.70636L10.1213 10.8277C10.2151 10.9215 10.3423 10.9741 10.4749 10.9741C10.6075 10.9741 10.7347 10.9215 10.8284 10.8277C10.9222 10.7339 10.9749 10.6067 10.9749 10.4741C10.9749 10.3415 10.9222 10.2143 10.8284 10.1206L8.70711 7.99926L10.8284 5.87793Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7 text-dark-3">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+                <!-- <img src="smiles.php" id="js-get-smile" class="visually-hidden" style="opacity: 0.01;"> -->
+                <div class="mb-8 mb-lg-0 col-sm-9 col-md-7 col-lg-4">
+                  <div
+                    class="mb-10 d-flex flex-column justify-content-between p-6 border rounded-2 border-dark-3"
+                    style="min-height: 17rem"
+                  >
+                    <div>
+                      <h2 class="mb-4">조직</h2>
+                      <p class="mb-6">
+                        조직이 관리하는 여러 사용자를 대상으로 서비스를 제공하실
+                        수 있어요.
+                      </p>
+                    </div>
+                    <a style="cursor: pointer" class="btn w-100 btn-action-2" onClick="ChannelIO('showMessenger');"                    >
+                      <!-- 연 120만원부터 -->
+                       문의하기
+                    </a>
+                  </div>
+                  <div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">실시간 채팅 / 음성 / 화상 대화</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">개인화 평가 보고서</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">참고 자료 업로드</h6>
+                    </div>
+                    <div class="position-relative mb-5">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-action-2 position-absolute top-50 translate-middle-y"
+                      >
+                        <path
+                          d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                        ></path>
+                      </svg>
+                      <h6 class="ps-7">팀 관리</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer 2 -->
+    <footer class="bg-bg-3 py-8 text-center">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-lg-2 col-md-3 mb-6 mb-md-0"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            <a style="cursor: pointer"
+              ><img
+                src="images/passview.png"
+                srcset="images/passview%402x.png 2x"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div
+            class="col mb-4 mb-md-0"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <a style="cursor: pointer" class="font-heading text-dark-1 mx-4"
+              >회사 소개</a
+            >
+            <!-- <a href="#" class="font-heading text-dark-1 mx-4">공지사항</a> -->
+            <a style="cursor: pointer" class="font-heading text-dark-1 mx-4"
+              >이용약관</a
+            >
+            <a style="cursor: pointer" class="font-heading text-dark-1 ms-4"
+              >개인정보처리방침</a
+            >
+          </div>
+          <div
+            class="col-12 col-lg-2 col-md-3"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            <!-- <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1"
+              >
+                <path
+                  d="M22.4591 6C21.6891 6.35 20.8591 6.58 19.9991 6.69C20.8791 6.16 21.5591 5.32 21.8791 4.31C21.0491 4.81 20.1291 5.16 19.1591 5.36C18.3691 4.5 17.2591 4 15.9991 4C13.6491 4 11.7291 5.92 11.7291 8.29C11.7291 8.63 11.7691 8.96 11.8391 9.27C8.27906 9.09 5.10906 7.38 2.99906 4.79C2.62906 5.42 2.41906 6.16 2.41906 6.94C2.41906 8.43 3.16906 9.75 4.32906 10.5C3.61906 10.5 2.95906 10.3 2.37906 10V10.03C2.37906 12.11 3.85906 13.85 5.81906 14.24C5.18979 14.4122 4.52916 14.4362 3.88906 14.31C4.16067 15.1625 4.6926 15.9084 5.41008 16.4429C6.12756 16.9775 6.99451 17.2737 7.88906 17.29C6.37269 18.4904 4.49306 19.1393 2.55906 19.13C2.21906 19.13 1.87906 19.11 1.53906 19.07C3.43906 20.29 5.69906 21 8.11906 21C15.9991 21 20.3291 14.46 20.3291 8.79C20.3291 8.6 20.3291 8.42 20.3191 8.23C21.1591 7.63 21.8791 6.87 22.4591 6Z"
+                ></path></svg
+            ></a>
+            <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1 mx-6"
+              >
+                <path
+                  d="M12 2.03906C6.5 2.03906 2 6.52906 2 12.0591C2 17.0591 5.66 21.2091 10.44 21.9591V14.9591H7.9V12.0591H10.44V9.84906C10.44 7.33906 11.93 5.95906 14.22 5.95906C15.31 5.95906 16.45 6.14906 16.45 6.14906V8.61906H15.19C13.95 8.61906 13.56 9.38906 13.56 10.1791V12.0591H16.34L15.89 14.9591H13.56V21.9591C15.9164 21.5869 18.0622 20.3846 19.6099 18.5691C21.1576 16.7537 22.0054 14.4447 22 12.0591C22 6.52906 17.5 2.03906 12 2.03906Z"
+                ></path></svg
+            ></a>
+            <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1"
+              >
+                <path
+                  d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                ></path></svg
+            ></a> -->
+          </div>
+        </div>
+        <div
+          class="mt-6 mb-8 border-bottom border-dark-3"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        ></div>
+        <p
+          class="fs-5 mb-0 text-start text-sm-start text-md-start text-lg-start text-xl-start"
+          data-aos="fade-down"
+          data-aos-delay="500"
+        >
+          대표이사: 조성백
+          <br />사업자등록번호: 769-86-02697
+          <!-- <br />통신판매업신고번호: 2024-서울양천구-1234호 -->
+          <br />문의전화: <a href="tel:1668-0128">1668-0128</a> (평일 09:00 ~
+          18:00) <br />이메일:
+          <a href="mailto:contact@passview.co.kr">contact@passview.co.kr</a>
+          <br /><br />Copyright © 2024 (주) 패스뷰
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="js/bootstrap.bundle.min.js"
+      data-integrity="38d870e9c3c4e532551b530706abb811"
+    ></script>
+
+    <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+    <script src="js/aos.js"></script>
+    <!-- Startup Plugins -->
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Startup scripts runner (for preview only, this code won't be added in the export) -->
+    <script>
+      document.runStartupScripts = function (functionToRun, params) {
+        console.log("fired runStartupScripts(" + functionToRun + ")");
+        var startupFunctions = {
+          setBackgrounds: function () {
+            setBackgrounds();
+          },
+          switchControlSlider: function () {
+            switchControlSlider();
+          },
+          stopYouTubeOnModalClose: function () {
+            stopYouTubeOnModalClose();
+          },
+          initAnimations: function () {
+            initAnimations(params);
+          },
+          reInitAnimations: function () {
+            if (params) {
+              var elements;
+              var settings = Object.assign({}, params);
+              settings.animationSpeed = parseInt(settings.animationSpeed);
+              if (settings.animation) {
+                elements = document.querySelectorAll("*[sf-anim-delay]");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    settings.delay =
+                      settings.animationSpeed *
+                      50 *
+                      parseFloat(el.getAttribute("sf-anim-delay"));
+                    if (settings.delay % 50 != 0) {
+                      settings.delay += settings.delay % 50;
+                    }
+                    settings.style = el.getAttribute("sf-anim-style");
+                    if (settings.style == "" || settings.style == undefined) {
+                      settings.style = settings.animationStyle;
+                    }
+                    el.classList.remove("aos-animate", "aos-init");
+                    el.setAttribute("data-aos", settings.style);
+                    el.setAttribute("data-aos-delay", settings.delay);
+                  });
+                }
+                settings.animationSpeed = settings.animationSpeed * 100;
+                initAnimations(settings.animationSpeed);
+                elements = document.querySelectorAll(".aos-init");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    el.classList.remove("aos-animate");
+                  });
+                  if (settings.timeOut) {
+                    clearTimeout(settings.timeOut);
+                  }
+                  settings.timeOut = setTimeout(function () {
+                    elements.forEach(function (el) {
+                      el.classList.add("aos-animate");
+                    });
+                  }, settings.animationSpeed);
+                }
+              } else {
+                elements = document.querySelectorAll(".aos-init");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    el.removeAttribute("data-aos");
+                    el.removeAttribute("data-aos-delay");
+                    el.classList.remove("aos-animate", "aos-init");
+                  });
+                }
+              }
+            }
+          },
+          showBsElement: function () {
+            if (params) {
+              if (params.classList.contains("offcanvas")) {
+                var eBsElement = new bootstrap.Offcanvas(params);
+              }
+              if (params.classList.contains("modal")) {
+                var eBsElement = new bootstrap.Modal(params);
+              }
+              if (params.classList.contains("dropdown-toggle")) {
+                var eBsElement = new bootstrap.Dropdown(params);
+              }
+              eBsElement.show();
+            }
+          },
+          destroyBsElements: function () {
+            var elements = document.querySelectorAll(
+              ".offcanvas, .modal, .dropdown-toggle"
+            );
+            var eBsElement;
+            if (elements.length) {
+              elements.forEach(function (el) {
+                if (el.classList.contains("offcanvas")) {
+                  eBsElement = bootstrap.Offcanvas.getInstance(el);
+                } else if (el.classList.contains("modal")) {
+                  eBsElement = bootstrap.Modal.getInstance(el);
+                } else if (el.classList.contains("dropdown-toggle")) {
+                  eBsElement = bootstrap.Dropdown.getInstance(el);
+                }
+                if (eBsElement) {
+                  eBsElement.hide();
+                  el.style.display = "";
+                  el.style.visibility = "";
+                }
+              });
+            }
+          },
+        };
+        if (functionToRun) {
+          startupFunctions[functionToRun](params);
+        } else {
+          Object.keys(startupFunctions).forEach(function (key) {
+            if (key != "showBsElement" && key != "destroyBsElements") {
+              // skip
+              startupFunctions[key](params);
+            }
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

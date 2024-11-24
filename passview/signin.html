@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>패스뷰 - 로그인</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="custom" content="NTc2Mjk=" id="snextras" />
+    <link rel="icon" href="images/favicon-default.png" />
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Google Fonts -->
+    <link href="css/css2.css" rel="stylesheet" id="sf-google-fonts" />
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+    <link href="css/styles.min_1.css" rel="stylesheet" id="sf-custom-css" />
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- Styles for controls (delete, move, edit, block name) -->
+    <link href="css/preview.css" rel="stylesheet" />
+    <!-- Open graph settings (social networks sharing settings) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Open graph settings end -->
+
+    <style>
+      body {
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+      }
+      footer {
+        margin-top: auto;
+      }
+      section {
+      }
+    </style>
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "feb6bfd8-eaf3-432a-b031-81de06949fbc"
+  });
+</script>
+  </head>
+  <body>
+    <!-- Navigation 1 -->
+    <nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+      <div class="d-block d-lg-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-3" data-aos="fade-down" data-aos-delay="0">
+              <a
+                class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#custom-id-ofc11kz8"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-light-1"
+                >
+                  <path
+                    d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div
+              class="col-6 text-center"
+              data-aos="fade-down"
+              data-aos-delay="250"
+            >
+              <a href="#"
+                ><img
+                  src="images/passview.png"
+                  srcset="images/passview.png 2x"
+                  alt=""
+                  class="img-fluid"
+                  data-aos="fade-down"
+                  data-aos-delay="0"
+              /></a>
+            </div>
+            <div class="col-3" data-aos="fade-down" data-aos-delay="500"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-start bg-bg-3"
+        id="custom-id-ofc11kz8"
+        aria-hidden="true"
+      >
+        <div class="offcanvas-header">
+          <a href="#">
+            <!-- <img
+              src="images/logo-dark.png"
+              srcset="images/logo-dark%402x.png 2x"
+              alt=""
+              class="img-fluid"
+            /> -->
+            <img src="images/passview.png" alt="" class="img-fluid" />
+          </a>
+          <a
+            class="btn btn-sm btn-width-equal-height btn-bg-3"
+            data-bs-dismiss="offcanvas"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-dark-2"
+            >
+              <path
+                d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <a
+              href="/index.html"
+              class="fw-bold text-dark-1 py-2 d-inline-block"
+              >소개</a
+            >
+          </div>
+          <div>
+            <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">문서</a>
+          </div>
+          <div>
+            <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">가격</a>
+          </div>
+          <div>
+            <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">가격</a>
+          </div>
+          <!-- <div>
+            <a href="/signin.html" class="fw-bold py-2 d-inline-block">로그인</a>
+          </div>
+          <a href="/signin.html" class="btn btn-sm btn-action-1 rounded-2 mt-4"
+            >회원가입</a
+          > -->
+        </div>
+      </div>
+      <div class="d-none d-lg-block">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-2">
+              <a href="#"
+                ><img
+                  src="images/1719052854.png"
+                  srcset="images/1719052854.png 2x"
+                  alt=""
+                  class="img-fluid"
+                  data-aos="fade-down"
+                  data-aos-delay="0"
+              /></a>
+            </div>
+            <div class="text-center d-flex justify-content-center col-6">
+              <a
+                href="/index.html"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="150"
+                >소개</a
+              >
+              <a
+                href="#"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="250"
+                >문서</a
+              >
+              <a
+                href="#"
+                class="fw-bold mx-4 text-dark-1"
+                data-aos="fade-down"
+                data-aos-delay="500"
+                >가격</a
+              >
+            </div>
+            <div class="d-flex align-items-center justify-content-end col-lg-3">
+              <!-- <a
+                href="/signin.html"
+                class="fw-bold fs-4 me-8"
+                data-aos="fade-down"
+                data-aos-delay="650"
+                >로그인</a
+              >
+              <a
+                href="/signin.html"
+                class="btn btn-sm btn-action-1 rounded-2"
+                data-aos="fade-down"
+                data-aos-delay="750"
+                >회원가입</a
+              > -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Form 6 -->
+    <section class="bg-bg-3 py-10 py-lg-20 text-center">
+      <div class="container">
+        <div
+          class="row align-items-center align-items-md-start align-items-lg-center flex-column-reverse flex-md-row"
+        >
+          <div class="col-xl-1"></div>
+          <div class="col-xl-4 col-lg-5 col-md-5 col-sm-10">
+            <h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
+              어서 오세요 😉
+            </h1>
+            <form
+              action="form-handler.php"
+              method="post"
+              enctype="multipart/form-data"
+              class="js-ajax-form"
+            >
+              <!-- forms alerts -->
+              <div
+                class="alert alert-action-8 fixed-top invisible fade js-form-result"
+                data-result="success"
+                role="alert"
+              >
+                <span
+                  class="js-form-alert-text"
+                  data-default-text="Thanks for your message!"
+                  >Thanks for your message!</span
+                >
+              </div>
+              <div
+                class="alert alert-action-5 fixed-top invisible fade js-form-result"
+                data-result="error"
+                role="alert"
+              >
+                <span class="js-form-alert-text">Error!</span>
+              </div>
+              <!-- forms alerts end -->
+              <div
+                class="input-group mb-6"
+                data-aos="fade-down"
+                data-aos-delay="150"
+              >
+                <div
+                  class="input-group-text border-end-0 border-dark-3 ps-4 pe-2"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-dark-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="이메일"
+                  class="form-control border-start-0 border-dark-3 ps-1"
+                  required="required"
+                />
+              </div>
+              <div
+                class="input-group mb-6"
+                data-aos="fade-down"
+                data-aos-delay="250"
+              >
+                <div
+                  class="input-group-text border-end-0 border-dark-3 ps-4 pe-2"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-dark-3"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="비밀번호"
+                  class="form-control border-start-0 border-dark-3 ps-1"
+                  required="required"
+                />
+              </div>
+              <label
+                class="float-xl-end"
+                data-aos="fade-down"
+                data-aos-delay="250"
+              >
+                <p class="d-inline-block text-dark-3 mb-6">
+                  생각나지 않는다면,
+                </p>
+                <a href="#" class="ms-1">아이디/비밀번호 찾기</a>
+              </label>
+              <button
+                class="btn btn-action-1 w-100 mb-6"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                로그인
+              </button>
+              <div data-aos="fade-down" data-aos-delay="250">
+                <p class="d-inline-block text-dark-3 mb-6">처음이신가요?</p>
+                <a href="#" class="ms-1">회원가입</a>
+              </div>
+              <div
+                class="w-50 border-bottom border-bg-2 mx-auto mb-6"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              ></div>
+              <p class="mb-6">소셜 계정으로 로그인</p>
+              <div class="row g-0">
+                <div class="col-4 pe-2">
+                  <a
+                    href="#"
+                    class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-dark-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-4 px-1">
+                  <a
+                    href="#"
+                    class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center"
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-dark-1"
+                    >
+                      <path
+                        d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-4 ps-2">
+                  <a
+                    href="#"
+                    class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center"
+                    ><svg
+                      width="24"
+                      height="20"
+                      viewBox="0 0 24 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-dark-1"
+                    >
+                      <path
+                        d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z"
+                      ></path></svg
+                  ></a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-6">
+            <img
+              src="images/form-6.png"
+              srcset="images/form-6%402x.png 2x"
+              alt=""
+              class="img-fluid mb-12 mb-lg-0"
+              data-aos="fade-down"
+              data-aos-delay="0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer 2 -->
+    <footer class="bg-bg-3 py-8 text-center">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-lg-2 col-md-3 mb-6 mb-md-0"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            <a href="#"
+              ><img
+                src="images/passview.png"
+                srcset="images/passview.png 2x"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div
+            class="col mb-4 mb-md-0"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <a href="#" class="font-heading text-dark-1 mx-4">회사 소개</a>
+            <a href="#" class="font-heading text-dark-1 mx-4">공지사항</a>
+            <a href="#" class="font-heading text-dark-1 mx-4">이용약관</a>
+            <a href="#" class="font-heading text-dark-1 ms-4"
+              >개인정보처리방침</a
+            >
+          </div>
+          <div
+            class="col-12 col-lg-2 col-md-3"
+            data-aos="fade-down"
+            data-aos-delay="250"
+          >
+            <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1"
+              >
+                <path
+                  d="M22.4591 6C21.6891 6.35 20.8591 6.58 19.9991 6.69C20.8791 6.16 21.5591 5.32 21.8791 4.31C21.0491 4.81 20.1291 5.16 19.1591 5.36C18.3691 4.5 17.2591 4 15.9991 4C13.6491 4 11.7291 5.92 11.7291 8.29C11.7291 8.63 11.7691 8.96 11.8391 9.27C8.27906 9.09 5.10906 7.38 2.99906 4.79C2.62906 5.42 2.41906 6.16 2.41906 6.94C2.41906 8.43 3.16906 9.75 4.32906 10.5C3.61906 10.5 2.95906 10.3 2.37906 10V10.03C2.37906 12.11 3.85906 13.85 5.81906 14.24C5.18979 14.4122 4.52916 14.4362 3.88906 14.31C4.16067 15.1625 4.6926 15.9084 5.41008 16.4429C6.12756 16.9775 6.99451 17.2737 7.88906 17.29C6.37269 18.4904 4.49306 19.1393 2.55906 19.13C2.21906 19.13 1.87906 19.11 1.53906 19.07C3.43906 20.29 5.69906 21 8.11906 21C15.9991 21 20.3291 14.46 20.3291 8.79C20.3291 8.6 20.3291 8.42 20.3191 8.23C21.1591 7.63 21.8791 6.87 22.4591 6Z"
+                ></path></svg
+            ></a>
+            <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1 mx-6"
+              >
+                <path
+                  d="M12 2.03906C6.5 2.03906 2 6.52906 2 12.0591C2 17.0591 5.66 21.2091 10.44 21.9591V14.9591H7.9V12.0591H10.44V9.84906C10.44 7.33906 11.93 5.95906 14.22 5.95906C15.31 5.95906 16.45 6.14906 16.45 6.14906V8.61906H15.19C13.95 8.61906 13.56 9.38906 13.56 10.1791V12.0591H16.34L15.89 14.9591H13.56V21.9591C15.9164 21.5869 18.0622 20.3846 19.6099 18.5691C21.1576 16.7537 22.0054 14.4447 22 12.0591C22 6.52906 17.5 2.03906 12 2.03906Z"
+                ></path></svg
+            ></a>
+            <a href="#" target="_blank"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-dark-1"
+              >
+                <path
+                  d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="mt-6 mb-8 border-bottom border-dark-3"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        ></div>
+        <p
+          class="fs-5 mb-0 text-start text-sm-start text-md-start text-lg-start text-xl-start"
+          data-aos="fade-down"
+          data-aos-delay="500"
+        >
+          대표이사: 조성백<br />사업자등록번호: 769-86-02697<br />통신판매업신고번호:
+          2024-서울양천구-1234호<br />문의전화: 1668-0128 (평일 09:00 ~
+          18:00)<br />이메일: contact@passview.co.kr <br /><br />Copyright ©
+          2024 (주) 커넥트 AI
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="js/bootstrap.bundle.min.js"
+      data-integrity="38d870e9c3c4e532551b530706abb811"
+    ></script>
+
+    <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+    <script src="js/aos.js"></script>
+    <!-- Startup Plugins -->
+    <script src="js/plugins.min.js"></script>
+
+    <!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Startup scripts runner (for preview only, this code won't be added in the export) -->
+    <script>
+      document.runStartupScripts = function (functionToRun, params) {
+        console.log("fired runStartupScripts(" + functionToRun + ")");
+        var startupFunctions = {
+          setBackgrounds: function () {
+            setBackgrounds();
+          },
+          switchControlSlider: function () {
+            switchControlSlider();
+          },
+          stopYouTubeOnModalClose: function () {
+            stopYouTubeOnModalClose();
+          },
+          initAnimations: function () {
+            initAnimations(params);
+          },
+          reInitAnimations: function () {
+            if (params) {
+              var elements;
+              var settings = Object.assign({}, params);
+              settings.animationSpeed = parseInt(settings.animationSpeed);
+              if (settings.animation) {
+                elements = document.querySelectorAll("*[sf-anim-delay]");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    settings.delay =
+                      settings.animationSpeed *
+                      50 *
+                      parseFloat(el.getAttribute("sf-anim-delay"));
+                    if (settings.delay % 50 != 0) {
+                      settings.delay += settings.delay % 50;
+                    }
+                    settings.style = el.getAttribute("sf-anim-style");
+                    if (settings.style == "" || settings.style == undefined) {
+                      settings.style = settings.animationStyle;
+                    }
+                    el.classList.remove("aos-animate", "aos-init");
+                    el.setAttribute("data-aos", settings.style);
+                    el.setAttribute("data-aos-delay", settings.delay);
+                  });
+                }
+                settings.animationSpeed = settings.animationSpeed * 100;
+                initAnimations(settings.animationSpeed);
+                elements = document.querySelectorAll(".aos-init");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    el.classList.remove("aos-animate");
+                  });
+                  if (settings.timeOut) {
+                    clearTimeout(settings.timeOut);
+                  }
+                  settings.timeOut = setTimeout(function () {
+                    elements.forEach(function (el) {
+                      el.classList.add("aos-animate");
+                    });
+                  }, settings.animationSpeed);
+                }
+              } else {
+                elements = document.querySelectorAll(".aos-init");
+                if (elements.length) {
+                  elements.forEach(function (el) {
+                    el.removeAttribute("data-aos");
+                    el.removeAttribute("data-aos-delay");
+                    el.classList.remove("aos-animate", "aos-init");
+                  });
+                }
+              }
+            }
+          },
+          showBsElement: function () {
+            if (params) {
+              if (params.classList.contains("offcanvas")) {
+                var eBsElement = new bootstrap.Offcanvas(params);
+              }
+              if (params.classList.contains("modal")) {
+                var eBsElement = new bootstrap.Modal(params);
+              }
+              if (params.classList.contains("dropdown-toggle")) {
+                var eBsElement = new bootstrap.Dropdown(params);
+              }
+              eBsElement.show();
+            }
+          },
+          destroyBsElements: function () {
+            var elements = document.querySelectorAll(
+              ".offcanvas, .modal, .dropdown-toggle"
+            );
+            var eBsElement;
+            if (elements.length) {
+              elements.forEach(function (el) {
+                if (el.classList.contains("offcanvas")) {
+                  eBsElement = bootstrap.Offcanvas.getInstance(el);
+                } else if (el.classList.contains("modal")) {
+                  eBsElement = bootstrap.Modal.getInstance(el);
+                } else if (el.classList.contains("dropdown-toggle")) {
+                  eBsElement = bootstrap.Dropdown.getInstance(el);
+                }
+                if (eBsElement) {
+                  eBsElement.hide();
+                  el.style.display = "";
+                  el.style.visibility = "";
+                }
+              });
+            }
+          },
+        };
+        if (functionToRun) {
+          startupFunctions[functionToRun](params);
+        } else {
+          Object.keys(startupFunctions).forEach(function (key) {
+            if (key != "showBsElement" && key != "destroyBsElements") {
+              // skip
+              startupFunctions[key](params);
+            }
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

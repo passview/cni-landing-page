@@ -1,3 +1,2 @@
-2024/06/22-22:37:30.057 2507 Reusing MANIFEST /Users/ocean/main/passview/chrome-user-data/Default/Local Storage/leveldb/MANIFEST-000001
-2024/06/22-22:37:30.060 2507 Recovering log #3
-2024/06/22-22:37:30.060 2507 Reusing old log /Users/ocean/main/passview/chrome-user-data/Default/Local Storage/leveldb/000003.log 
+2024/11/26-16:40:11.980 3e03 Creating DB /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Local Storage/leveldb since it was missing.
+2024/11/26-16:40:12.005 3e03 Reusing MANIFEST /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Local Storage/leveldb/MANIFEST-000001

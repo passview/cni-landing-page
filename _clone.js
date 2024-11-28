@@ -25,8 +25,9 @@ console.log(JSON.stringify(_cookies, null, 2));
 async function main() {
   await scrape({
     urls: [
-      "https://designmodo.com/startup/app/preview.php?id=30746",
-      "https://designmodo.com/startup/app/preview.php?id=30764"
+      // "https://designmodo.com/startup/app/preview.php?id=30746",
+      // "https://designmodo.com/startup/app/preview.php?id=30764",
+      "https://designmodo.com/startup/app/preview.php?id=33891"
     ],
     directory: path.resolve(dirname(import.meta), "cloned"),
     request: {

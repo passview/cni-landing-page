@@ -1,3 +1,2 @@
-2024/06/22-22:37:30.437 b603 Reusing MANIFEST /Users/ocean/main/passview/chrome-user-data/Default/shared_proto_db/MANIFEST-000001
-2024/06/22-22:37:30.437 b603 Recovering log #3
-2024/06/22-22:37:30.438 b603 Reusing old log /Users/ocean/main/passview/chrome-user-data/Default/shared_proto_db/000003.log 
+2024/11/26-16:40:12.270 a707 Creating DB /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/shared_proto_db since it was missing.
+2024/11/26-16:40:12.285 a707 Reusing MANIFEST /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/shared_proto_db/MANIFEST-000001

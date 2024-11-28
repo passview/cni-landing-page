@@ -1,3 +1,2 @@
-2024/06/22-22:30:04.925 a407 Reusing MANIFEST /Users/ocean/main/passview/chrome-user-data/Default/Extension Scripts/MANIFEST-000001
-2024/06/22-22:30:04.925 a407 Recovering log #3
-2024/06/22-22:30:04.925 a407 Reusing old log /Users/ocean/main/passview/chrome-user-data/Default/Extension Scripts/000003.log 
+2024/11/26-16:40:11.973 11903 Creating DB /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Extension Scripts since it was missing.
+2024/11/26-16:40:11.989 11903 Reusing MANIFEST /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Extension Scripts/MANIFEST-000001

@@ -26,8 +26,9 @@ for (const { name, value } of cookies) {
 async function main() {
   await scrape({
     urls: [
-      "https://designmodo.com/startup/app/preview.php?id=30746",
-      "https://designmodo.com/startup/app/preview.php?id=30764",
+      // "https://designmodo.com/startup/app/preview.php?id=30746",
+      // "https://designmodo.com/startup/app/preview.php?id=30764",
+      "https://designmodo.com/startup/app/preview.php?id=33891"
     ],
     directory: path.resolve(dirname(import.meta), "cloned"),
     request: {

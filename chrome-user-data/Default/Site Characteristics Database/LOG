@@ -1,3 +1,2 @@
-2024/06/22-22:37:30.025 f903 Reusing MANIFEST /Users/ocean/main/passview/chrome-user-data/Default/Site Characteristics Database/MANIFEST-000001
-2024/06/22-22:37:30.025 f903 Recovering log #3
-2024/06/22-22:37:30.025 f903 Reusing old log /Users/ocean/main/passview/chrome-user-data/Default/Site Characteristics Database/000003.log 
+2024/11/26-16:40:11.927 b903 Creating DB /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Site Characteristics Database since it was missing.
+2024/11/26-16:40:11.963 b903 Reusing MANIFEST /Users/ocean/passview/cni-landing-page/chrome-user-data/Default/Site Characteristics Database/MANIFEST-000001
